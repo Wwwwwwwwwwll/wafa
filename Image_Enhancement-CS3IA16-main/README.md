@@ -1,55 +1,81 @@
-# Image_Enhancement-CS3IA16
+Here’s the English version of the GitHub project description for your MATLAB GUI application:
 
-# Noise Removal in MATLAB
+---
 
-![Original Dog Image](dogOriginal.bmp) ![Distorted Dog Image](dogDistorted.bmp)
+## 🎯 MATLAB GUI Application – Digital Image Processing and Quality Evaluation using MSE
 
-This project is part of the university coursework for the third-year module "Image Analysis." The objective is to gain a deeper understanding of image enhancement techniques in both spatial and frequency domains. The assignment involves developing algorithms to improve the quality of a distorted image (dogDistorted.bmp) by removing or reducing noise, caused by a combination of periodic and random noise.
+### 📌 Overview
 
-## Overview
+This project is a **MATLAB-based GUI application** designed to help users perform **interactive and visual digital image processing**. The application allows users to **upload an original image and a mask**, then apply a variety of **commonly used image filtering techniques**. Each filtered result is evaluated using **MSE (Mean Squared Error)** to assess the image quality compared to the original input.
 
-- **Course:** Image Analysis Third-Year Module
-- **Language:** MATLAB
+This tool is suitable for students, researchers, or anyone interested in exploring and comparing different image processing techniques such as **Median Filtering**, **Mean Filtering**, **Gaussian Filtering**, **Fourier Transform with Masking**, and **Contrast Adjustment**.
 
-## Project Description
+---
 
-### Assignment Goal
+### 🧩 Key Features
 
-The primary goal of this assignment is to implement image enhancement techniques in MATLAB to address the distorted image (dogDistorted.bmp). The distortion in the image is known to be caused by a combination of periodic and random noise.
+* ✅ **Upload Original Image** in `.jpg`, `.png`, or `.bmp` formats
+* ✅ **Upload Mask Image** (usually `.png` grayscale or binary mask)
+* ✅ **Median Filtering** (non-linear) with selectable kernel sizes (from 3×3 to 19×19)
+* ✅ **Mean Filtering** (linear) with adjustable kernel sizes
+* ✅ **Gaussian Filtering** with adjustable kernel sizes
+* ✅ **Fourier Transform + Masking** for frequency domain filtering
+* ✅ **Contrast Adjustment** using MATLAB’s `imadjust`
+* ✅ **Automatic Quality Evaluation** using **Mean Squared Error (MSE)**
+* ✅ **Histogram Visualization** of original and processed images
+* ✅ **User-Friendly GUI** to interactively explore filter effects and results
 
-### Key Steps
+---
 
-1. **Input Images:**
+### 🔍 Purpose
 
-   - Original Image: `dogOriginal.bmp`
-   - Distorted Image: `dogDistorted.bmp`
+* To demonstrate differences between popular image filters
+* To support learning of **spatial vs. frequency domain filtering**
+* To evaluate filter effectiveness using quantitative MSE metrics
 
-2. **Algorithm Development/Noise Removal Methods:**
+---
 
-   - Develop algorithms in both frequency and spatial domains to enhance the quality of the distorted image.
+### 📸 User Interface Highlights
 
-3. **Performance Evaluation:**
-   - Compare the processed image with the original using Mean Squared Error (MSE).
-   - Compare the processed image with the original image to visually assess the improvement.
+The GUI displays:
 
-## Usage
+* Original image and each processed result
+* Histogram of the original and final filtered image
+* MSE values shown for each processing stage
+* Dropdown menu for kernel size selection (applies to median, mean, and Gaussian filters)
 
-To run the MATLAB code:
+---
 
-1. Open MATLAB.
-2. Load the project files.
-3. Run the main script for noise removal.
+### 🛠️ How to Use
 
-## Group Members
+1. Run the main file (e.g., `FullImageFilterApp.m`) in MATLAB
+2. Click **"Upload Original Image"** to load an input image
+3. Click **"Upload Mask"** to load a mask image (binary preferred)
+4. Select the desired **kernel size** from the dropdown
+5. Click **"Process All Filters"**
+6. View the filtering results, histograms, and MSE values
 
-[@Samuel Jones](https://github.com/Joness07)
+---
 
-[@Ben Bridgeman](https://github.com/benbridgeman03)
+### 📂 Project Structure
 
-## Additional Notes
+FullImageFilterApp.m   % Main GUI application file
+mask.png               % Sample mask image
+README.md              % Project description (optional)
+```
 
-- Refer to the assignment description for specific requirements and expectations.
-- Explore MATLAB documentation for relevant functions and techniques.
-- Ensure all code and documentation are well-organized and adhere to best practices.
+---
 
-Feel free to reach out if you have any questions or feedback.
+### 🧪 Requirements
+
+* MATLAB R2019b or later
+* Image Processing Toolbox
+
+---
+
+### 📘 License
+
+This project is released under the MIT License. Feel free to use, modify, or redistribute with attribution.
+
+---
+
