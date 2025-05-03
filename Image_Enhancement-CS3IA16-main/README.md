@@ -1,6 +1,3 @@
-Here’s the English version of the GitHub project description for your MATLAB GUI application:
-
----
 
 ## 🎯 MATLAB GUI Application – Digital Image Processing and Quality Evaluation using MSE
 
